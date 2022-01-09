@@ -1,0 +1,163 @@
+---
+title: Robot Animation
+author: Danial
+type: post
+date: 2020-09-10T18:18:02+00:00
+url: /robot-animation/
+site-sidebar-layout:
+  - default
+site-content-layout:
+  - default
+theme-transparent-header-meta:
+  - default
+categories:
+  - Uncategorized
+
+---
+Just a quick practice with a robot animation style.css to ensure that all the div are centered correctly.
+
+Days since last Zero Day: 1 (10/9/2020)
+
+h1 {  
+text-align: center;  
+font-family: &#8216;Roboto&#8217;, sans-serif;  
+}
+
+.robots {  
+flex-wrap: wrap;  
+display: flex;  
+justify-content: center;  
+}
+
+.head,  
+.left_arm,  
+.torso,  
+.right_arm,  
+.left_leg,  
+.right_leg {  
+background-color: #5f93e8;  
+}
+
+.android {  
+}
+
+.head {  
+width: 200px;  
+margin: 0 auto;  
+height: 150px;  
+border-radius: 200px 200px 0 0;  
+margin-bottom: 10px;  
+}
+
+.eyes {  
+display: flex;
+
+}
+
+.head:hover {  
+width: 300px;  
+transition: 1s ease-in-out;  
+}
+
+.upper_body {  
+width: 300px;  
+height: 150px;  
+display: flex;  
+}
+
+.left\_arm, .right\_arm {  
+width: 40px;  
+height: 125px;  
+border-radius: 100px;  
+}
+
+.left_arm {  
+margin-right: 10px;  
+}
+
+.left_arm:hover {  
+-webkit-transform: rotate(20deg);  
+-moz-transform: rotate(20deg);  
+-o-transform: rotate(20deg);  
+-ms-transform: rotate(20deg);  
+transform: rotate(20deg);  
+}
+
+.right_arm {  
+margin-left: 10px;  
+}
+
+.right_arm:hover {  
+-webkit-transform: rotate(-20deg);  
+-moz-transform: rotate(-20deg);  
+-o-transform: rotate(-20deg);  
+-ms-transform: rotate(-20deg);  
+transform: rotate(-20deg);  
+}
+
+.torso {  
+width: 200px;  
+height: 200px;  
+border-radius: 0 0 50px 50px;  
+}
+
+.lower_body {  
+width: 200px;  
+height: 200px;  
+/\* This is another useful property. Hmm what do you think it does?\*/  
+margin: 0 auto;  
+display: flex;
+
+}
+
+.left\_leg, .right\_leg {  
+width: 40px;  
+height: 120px;  
+border-radius: 0 0 100px 100px;  
+}
+
+.left_leg {  
+margin-left: 30px;  
+margin-right: 30px;  
+}
+
+.left_leg:hover {  
+-webkit-transform: rotate(20deg);  
+-moz-transform: rotate(20deg);  
+-o-transform: rotate(20deg);  
+-ms-transform: rotate(20deg);  
+transform: rotate(20deg);  
+}
+
+.right_leg {  
+margin-left: 30px;  
+margin-right: 30px;  
+}
+
+.right_leg:hover {  
+-webkit-transform: rotate(-20deg);  
+-moz-transform: rotate(-20deg);  
+-o-transform: rotate(-20deg);  
+-ms-transform: rotate(-20deg);  
+transform: rotate(-20deg);  
+}  
+.left\_eye, .right\_eye {  
+width: 20px;  
+height: 20px;  
+border-radius: 15px;  
+background-color: white;  
+}
+
+.left_eye {  
+/* These properties are new and you haven&#8217;t encountered  
+in this course. Check out CSS Tricks to see what it does! */  
+position: relative;  
+top: 100px;  
+left: 40px;  
+}
+
+.right_eye {  
+position: relative;  
+top: 100px;  
+left: 120px;  
+}
